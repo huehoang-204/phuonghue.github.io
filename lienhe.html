@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+  <div class="lk">
+    <div class="cover-photo">
+      <img src="https://images.unsplash.com/photo-1565464027194-7957a2295fb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" class="profile">
+    </div>
+    <div class="profile-name">HOÀNG PHƯƠNG HUẾ</div>
+    <p class="about">Đang học tại: Đại học Đại Nam</p>
+    <button class="msg-btn">LINK</button>
+    <button class="follow-btn">Following</button>
+   
+  </div>
+  <style>
+
+.lk{
+  user-select: none;
+  margin: 100px auto;
+  background: #231e39;
+  color: #b3b8cd;
+  border-radius: 5px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+}
+.cover-photo{
+  background: url(https://images.unsplash.com/photo-1540228232483-1b64a7024923?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80);
+  height: 160px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.profile{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 93px 0 0 -175px;
+  border: 1px solid #1f1a32;
+  padding: 7px;
+  background: #292343;
+}
+.profile-name{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 27px 0 0 120px;
+}
+.about{
+  margin-top: 35px;
+  line-height: 21px;
+}
+button{
+  margin: 10px 0 40px 0;
+}
+.msg-btn, .follow-btn{
+  background: #03bfbc;
+  border: 1px solid #03bfbc;
+  padding: 10px 25px;
+  color: #231e39;
+  border-radius: 3px;
+  font-family: Montserrat, sans-serif;
+  cursor: pointer;
+}
+.follow-btn{
+  margin-left: 10px;
+  background: transparent;
+  color: #02899c;
+}
+.follow-btn:hover{
+  color: #231e39;
+  background: #03bfbc;
+  transition: .5s;
+}
+.lk i{
+  padding-left: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+.lk i:hover{
+  color: #03bfbc;
+}
+  </style>
+
+    
+<!-- <figure class="snip0057 red hover">
+    <figcaption>
+      <h2>Victoria <span>Pena</span></h2>
+      <p>A voice crackles in Calvin's radio: "Enemy fighters at two o'clock!" "Roger. What should I do until then?"</p>
+      <div class="icons">
+        <a href="#">
+          <i class="ion-ios-home"></i>
+        </a>
+          <a href="#"><i class="ion-ios-email"></i></a>
+          <a href="#"><i class="ion-ios-telephone"></i></a>
+        </div>
+    </figcaption>
+    <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample4.jpg" alt="sample4"/></div>
+    <div class="position">Illustrator</div>
+  </figure>
+
+  <figure class="snip0057 blue">
+    <figcaption>
+      <h2>Tiffany <span>Case</span></h2>
+      <p>That's the whole problem with science. You've got a bunch of empiricists trying to describe things of unimaginable wonder.</p>
+      <div class="icons">
+        <a href="#"><i class="ion-ios-home"></i></a>
+        <a href="#"><i class="ion-ios-email"></i></a>
+        <a href="#"><i class="ion-ios-telephone"></i></a>
+      </div>
+    </figcaption>
+    <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg" alt="sample3"/></div>
+    <div class="position">Software Engineer</div>
+  </figure>
+
+
+
+  
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.snip0057 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 380px;
+  max-width: 480px;
+  width: 100%;
+  background: #ffffff;
+  color: #000000;
+}
+figure.snip0057 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+figure.snip0057 .image {
+  width: 50%;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transform: skewX(-15deg);
+  transform: skewX(-15deg);
+}
+figure.snip0057 .image img {
+  position: relative;
+  display: block;
+  left: -15%;
+  z-index: 1;
+  -webkit-transform: skew(15deg);
+  transform: skew(15deg);
+}
+figure.snip0057:before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 45%;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transform: skewX(-17deg);
+  transform: skewX(-17deg);
+  -webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+  box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+}
+figure.snip0057 figcaption {
+  padding: 20px 30px 20px 20px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 50%;
+}
+figure.snip0057 figcaption h2,
+figure.snip0057 figcaption p {
+  margin: 0;
+  text-align: right;
+  padding: 10px 0;
+  width: 100%;
+}
+figure.snip0057 figcaption h2 {
+  font-size: 1.3em;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+figure.snip0057 figcaption h2 span {
+  font-weight: 800;
+}
+figure.snip0057 figcaption p {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+figure.snip0057 figcaption .icons {
+  width: 100%;
+  text-align: right;
+}
+figure.snip0057 figcaption .icons i {
+  font-size: 26px;
+  padding: 5px;
+  top: 50%;
+  color: #000000;
+  opacity: 0;
+}
+figure.snip0057 figcaption a {
+  opacity: 0.3;
+}
+figure.snip0057 figcaption a:hover {
+  opacity: 0.8;
+}
+figure.snip0057 .position {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  padding: 15px 30px;
+  font-size: 0.9em;
+  opacity: 1;
+  font-style: italic;
+  color: #ffffff;
+  background: #000000;
+}
+figure.snip0057.blue .position {
+  background: #20638f;
+}
+figure.snip0057.red .position {
+  background: #962d22;
+}
+figure.snip0057.yellow .position {
+  background: #bf6516;
+}
+figure.snip0057:hover figcaption,
+figure.snip0057.hover figcaption {
+  bottom: 40px;
+}
+figure.snip0057:hover .icons i,
+figure.snip0057.hover .icons i {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.snip0057:hover:before,
+figure.snip0057.hover:before {
+  -webkit-animation: shadow 0.6s ease-in-out;
+  animation: shadow 0.6s ease-in-out;
+}
+@-webkit-keyframes shadow {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: -5px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes shadow {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: -5px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+
+/* Demo purposes only */
+html {
+  height: 100%;
+}
+body {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
+}
+  </style> -->
+
+
+
+
+
+  <!-- <div class="form">
+    <figure class="snip0057 red hover">
+      <figcaption>
+        <h2>My <span>Hobbies</span></h2>
+        <p>Sleep ||
+          Money<br>
+          Listen to music  ||
+          Travaling  ||
+          Game
+        </p>
+        <div class="icons">
+          <a href="#">
+            <i class="ion-ios-home"></i>
+          </a>
+            <a href="mailto:hoangphuonghue92@gmail.com"><i class="ion-ios-email"></i></a>
+            <a href="https://www.facebook.com/hoangphuonghuetkc"><i class="ion-social-facebook"></i></a>
+          </div>
+      </figcaption>
+      <div class="image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample4.jpg" alt="sample4"/></div>
+      <div class="position"></div>
+    </figure>
+  
+    <figure class="snip0057 blue">
+      <figcaption>
+        <h2>Cung hoàng đạo <span>Kim Ngưu</span></h2>
+        <p>Nhắc đến cung Kim Ngưu, hình ảnh dễ nhận thấy nhất chính là hình ảnh đầu con bò đực, đây cũng là biểu tượng chính thức của cung hoàng đạo này. Trong thời Hy Lạp cổ đại, bò đực đại diện cho sự kiên định, sức mạnh phi thường, vững vàng.
+         </p>
+        <div class="icons">
+          <a href="#"><i class="ion-ios-home"></i></a>
+          <a href="mailto:hoangphuonghue92@gmail.com"><i class="ion-ios-email"></i></a>
+          <a href="https://www.facebook.com/hoangphuonghuetkc"><i class="ion-social-facebook"></i></a>
+        </div>
+      </figcaption>
+      <div class="image"><img src="./img/kn1.jfif" alt="sample3" width="100%" ></div>
+      <div class="position"></div>
+    </figure>
+  </div> -->
+
+  <figure id="card">
+    <div class="left">
+      <svg width="0" height="0">
+        <clipPath id="clipPolygon">
+          <polygon points="0 430,405 570,405 0,0 0"></polygon>
+        </clipPath>
+      </svg>    
+      <img src="https://images.unsplash.com/photo-1445052858312-134745f190f2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a5595522ebe2992245a1d56d079a71d0" alt="user" class="clip">
+      <a href="#" class="chat"><span class="entypo-comment"></span></a>
+    </div>
+    <div class="right">
+      <h1>Hi!</h1>
+      <p>Tôi tên là Hoàng Phương Huế</p>
+      <p>Đến đến từ Hưng Yên</p>
+      <p>Hưng Yên nằm ở tả ngạn sông Hồng, trung tâm của đồng bằng Bắc Bộ, là vùng đất có truyền thống văn hiến từ lâu đời. 
+        Với vị trí địa lý thuận lợi, địa hình bằng phẳng, phía Bắc giáp tỉnh Bắc Ninh, phía Tây bắc giáp thành phố Hà Nội, phía Đông giáp tỉnh Hải Dương, 
+        phía Nam giáp tỉnh Thái Bình, phía Tây Nam giáp tỉnh Hà Nam lại được phù sa màu mỡ bồi đắp bởi hai con sông lớn là sông Hồng và sông Luộc tạo cho Hưng Yên 
+        những cánh đồng lúa, ngô xanh biếc, 
+        những đầm sen rộng lớn và những đặc sản ngon nổi tiếng như: nhãn lồng, mật ong, hạt sen…</p>
+      <nav class="social">
+        <h2>get in touch</h2>
+        <a href="#"><span class="entypo-twitter"></span></a>
+        <a href="#"><span class="entypo-facebook"></span></a>
+        <a href="#"><span class="entypo-dribbble"></span></a>
+        <a href="#"><span class="entypo-instagrem"></span></a>
+      </nav>
+    </div>
+  </figure>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+    @import url(https://weloveiconfonts.com/api/?family=entypo);
+    /* entypo */
+    [class*="entypo-"]:before {
+      font-family: 'entypo', sans-serif;
+    }
+    
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    *:after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+    
+    /* html {
+      font-family: 'Montserrat';
+      font-size: 14px;
+    }
+    
+    body {
+      background-color: #8F96A0;
+      height: 100vh;
+    } */
+    
+    /* ==================== USER PROFILE ====================*/
+    
+    figure#card {
+      position: relative;
+      margin: auto;
+      margin-top: 100px;
+      width: 810px;
+      height: 500px;
+      background-color: #fff;
+      box-shadow: 0px 50px 90px 0px rgba(32,37,58,0.50);
+    }
+    
+    /* ~~~~~~~~~~~~~~~ USER PROFILE > INNER ~~~~~~~~~~~~~~*/
+    
+    div.left, div.right {
+      position: relative;
+      float: left;
+      width: 50%;
+      height: 100%;
+    }
+    
+    /* ~~~~~~~~~~~~~~~ USER PROFILE > INNER => LEFT ~~~~~~~~~~~~~~*/
+    
+    div.left {
+      height: 114%;
+    }
+    
+    div.left img {
+      width: 100%;
+    }
+    
+    div.left svg {
+      position: absolute;
+    }
+    
+    div.left .clip {
+      -webkit-clip-path: polygon(0px 430px,405px 570px,405px 0px,0px 0px);
+              clip-path: url("#clipPolygon");
+    }
+    
+    .chat {
+      position: absolute;
+      bottom: 75px;
+      left: 20px; 
+      color: #465367;
+      font-size: 30px;
+      text-decoration: none;
+      transition: all 200ms ease-in-out 40ms;
+    }
+    
+    .chat:hover {
+      transform: scale(1.1);
+      color: #4592FF;
+    }
+    
+    /* ~~~~~~~~~~~~~~~ USER PROFILE > INNER => RIGHT ~~~~~~~~~~~~~~*/
+    
+    div.right {
+      padding: 40px;
+    } 
+    
+    div.right h1 {
+      text-transform: uppercase;
+      font-size: 42px;
+      color: #465367;
+      margin-bottom: 30px;
+    }
+    
+    div.right p {
+      color: #808BA8;
+    }
+    
+    nav.social {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 1000;
+    }
+    
+    nav.social h2 {
+      text-transform: uppercase;
+      color: #808BA8;
+      background-color: #4A5269;
+      line-height: 45px;
+    }
+    
+    nav.social a {
+      position: absolute;
+      width: 25%;
+      height: 20px;
+      color: #fff;
+      font-size: 30px;
+      line-height: 90px;
+      text-decoration: none;
+      transition: all 200ms ease-in-out 40ms;
+      transform-origin: bottom;
+    }
+    
+    nav.social span {
+      opacity: 0;
+      height: 0;
+      transition: all 200ms ease-in-out 30ms;
+    }
+    
+    nav.social a:hover > span {
+      transition-delay: 200ms;
+      opacity: 1;
+      height: initial;
+    }
+    
+    nav.social a:hover {
+      height: 90px;
+    }
+    
+    nav.social a:nth-child(2) {
+      background-color: #1DA1F2;
+      left: 0;
+    }
+    
+    nav.social a:nth-child(3) {
+      background-color: #45619D;
+      left: 25%;
+    }
+    
+    nav.social a:nth-child(4) {
+      background-color: #EA4C89;
+      left: 50%;
+    }
+    
+    nav.social a:nth-child(5) {
+      background-color: #004879;
+      left: 75%;
+    }</style>
+
+</body>
+</html>
